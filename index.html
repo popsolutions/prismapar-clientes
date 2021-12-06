@@ -18,9 +18,7 @@
 <style type="text/css">
 
 	.clientes{
-		background-color: #4471A5;
 		padding-top: 30px;
-		height: 600px;
 	}
 
 	.slick-slide {
@@ -47,7 +45,7 @@
 
 <body>
 	<div class="container clientes">
-		<div class="carousel">
+		<div class="carousel" style="height: fit-content;">
 
 			<div class="card-cliente">
 				<img src="./logos-clientes/1.jpg" />
@@ -437,7 +435,7 @@
 		$('.carousel').slick({
 			slidesToShow: 8,
 			infinite: true,
-			slidesToScroll: 8,
+			slidesToScroll: 1,
     		rows: 2,
 			responsive:
 				[
@@ -446,7 +444,7 @@
 						settings: {
 							infinite: true,
 							arrows: true,
-							slidesToShow: 2
+							slidesToShow: 4
 						}
 					},
 
@@ -455,7 +453,7 @@
 						settings: {
 							infinite: true,
 							arrows: true,
-							slidesToShow: 1
+							slidesToShow: 2
 						}
 					},
 				]
