@@ -4,7 +4,7 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:100;200,300;400;500;600;700;" rel="stylesheet">
 
-	<!-- Última versão CSS compilada e minificada -->
+	<!-- Última versão CSS compilada e minificada ultima versão alterada ok -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
 		integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -15,12 +15,13 @@
 </head>
 
 
+
 <style type="text/css">
 
 	.clientes{
-		background-color: #4471A5;
 		padding-top: 30px;
-		height: 600px;
+		height: fit-content;
+		background-color: #7bafde;
 	}
 
 	.slick-slide {
@@ -41,11 +42,13 @@
 
 	.card-cliente{
 		padding-bottom: 20px;
+		padding-left: 14px;
 	}
 
 </style>
 
-<body>
+<body style="background-color: #7bafde;">
+<section>
 	<div class="container clientes">
 		<div class="carousel">
 
@@ -419,6 +422,7 @@
 
 		</div>
 	</div>
+</section>
 
 </body>
 
@@ -437,7 +441,7 @@
 		$('.carousel').slick({
 			slidesToShow: 8,
 			infinite: true,
-			slidesToScroll: 8,
+			slidesToScroll: 1,
     		rows: 2,
 			responsive:
 				[
@@ -446,7 +450,7 @@
 						settings: {
 							infinite: true,
 							arrows: true,
-							slidesToShow: 2
+							slidesToShow: 4
 						}
 					},
 
@@ -455,7 +459,7 @@
 						settings: {
 							infinite: true,
 							arrows: true,
-							slidesToShow: 1
+							slidesToShow: 2
 						}
 					},
 				]
